@@ -1,14 +1,26 @@
-function Navbar() {
-    return (
-      <nav style={{ position: 'fixed', top: 0, width: '100%', backgroundColor: '#333', color: '#fff', padding: '10px' }}>
-        <ul style={{ listStyleType: 'none', margin: 0, padding: 0, display: 'flex' }}>
-          <li style={{ margin: '0 15px' }}><a href="#home" style={{ color: '#fff', textDecoration: 'none' }}>Home</a></li>
-          <li style={{ margin: '0 15px' }}><a href="#about" style={{ color: '#fff', textDecoration: 'none' }}>About</a></li>
-          <li style={{ margin: '0 15px' }}><a href="#services" style={{ color: '#fff', textDecoration: 'none' }}>Services</a></li>
-          <li style={{ margin: '0 15px' }}><a href="#contact" style={{ color: '#fff', textDecoration: 'none' }}>Contact</a></li>
-        </ul>
-      </nav>
-    );
-  };
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css'; // Import your CSS file for styling
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <Link to="/">LOGO placement</Link>
+      </div>
+      <ul className="navbar-links">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+      <div className="navbar-extra">
+        <input type="text" placeholder="Search..." className="navbar-search" />
+        <Link to="/profile" className="navbar-profile">Profile</Link>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
   
-  export default Navbar;
