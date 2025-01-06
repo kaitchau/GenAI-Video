@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Import your CSS file for styling
+import '../stylesheets/Navbar.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">LOGO placement</Link>
+        <Link to="/">LOGO</Link>
       </div>
       <ul className="navbar-links">
         <li><Link to="/">Home</Link></li>
@@ -14,10 +14,6 @@ const Navbar = () => {
         <li><Link to="/services">Services</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
-      <div className="navbar-extra">
-        <input type="text" placeholder="Search..." className="navbar-search" />
-        <Link to="/profile" className="navbar-profile">Profile</Link>
-      </div>
     </nav>
   );
 };
