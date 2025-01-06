@@ -12,7 +12,7 @@ git clone git@github.com:kaitchau/GenAI-Video.git
 
 2. **Go into the application directory**
 ```bash 
-cd GenAI-Video
+cd genai
 ```
 
 3. **Run the app**
