@@ -10,7 +10,7 @@
 git clone git@github.com:kaitchau/GenAI-Video.git
 ```
 
-2. **Go into the application directory**
+2. **Navigate into the client directory**
 ```bash 
 cd client
 ```
