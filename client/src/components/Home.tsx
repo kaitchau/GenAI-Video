@@ -2,13 +2,8 @@ import Carousel from "./Carousel";
 
 function Home() {
   return (
-    <div style={{ padding: '20px', marginTop: '60px' }}>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the main content area. You can add more sections here.</p>
+    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-purple-600 to-black text-white p-20">
       <Carousel />
-      <div style={{ height: '2000px' }}>
-        <p>Scroll down to see more content...</p>
-      </div>
     </div>
   );
 };
