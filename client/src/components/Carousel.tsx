@@ -16,12 +16,11 @@ const Carousel = () => {
   return (
     <div className="carousel-container">
       <button className="carousel-button prev" onClick={prevSlide}>‹</button>
-      <div className="carousel-wrapper">
+      <div className="carousel-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {items.map((item, index) => (
           <div
             key={index}
-            className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
-            style={{ transform: `translateX(${(index - currentIndex) * 100}%)` }}
+            className="carousel-item"
           >
             {item}
           </div>
