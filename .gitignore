@@ -31,3 +31,6 @@ jspm_packages/
 
 # VSCode files
 .vscode/
+
+# Ignore the .gitignore file itself
+.gitignore
