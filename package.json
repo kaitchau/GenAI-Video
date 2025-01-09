@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+      "fstream": "^1.0.12",
+      "glob": "^11.0.0",
+      "lru-cache": "^11.0.2",
+      "tar": "^7.4.3"
+    }
+}
