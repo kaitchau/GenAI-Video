@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Carousel from "./Carousel";
 import { gsap } from "gsap";
 import '../stylesheets/Home.css'; // Adjust the path if necessary
@@ -21,6 +22,12 @@ function Home() {
 
       {/* Carousel Component */}
       <Carousel />
+    {/* Neon Button */}
+    <div className="flex justify-center mt-10">
+        <Link to="/demoUse" className="neon-button">
+          Go to Demo
+        </Link>
+      </div>
     </div>
   );
 }
