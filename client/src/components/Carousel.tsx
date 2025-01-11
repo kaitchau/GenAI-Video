@@ -18,8 +18,8 @@ const Carousel = () => {
     if (carouselRef.current) {
       const slides = carouselRef.current.children as HTMLCollectionOf<HTMLDivElement>;
       const totalSlides = items.length;
-      const slideWidth = 300; // Adjust based on actual slide width
-      const depth = 400; // Adjust depth for 3D effect
+      const slideWidth = 450;
+      const depth = 400;
       const angle = 45; // Adjust angle for 3D effect for non-current (next, prev) slides
 
       Array.from(slides).forEach((slide, i) => {
