@@ -2,9 +2,7 @@ import { Link } from 'react-router-dom';
 import '../stylesheets/Navbar.css';
 
 const Navbar = () => {
-  return (
-    <nav className="relative fixed top-0 w-full bg-gradient-to-r from-gray-900 via-black to-gray-900 bg-opacity-75 text-white p-4 flex justify-between items-center z-50 shadow-2xl backdrop-blur-lg">
-      {/* Bubbles Animation */}
+  return (<nav className="relative fixed top-0 w-full bg-gradient-to-r from-gray-900 via-black to-gray-900 bg-opacity-5 text-white p-4 flex justify-between items-center z-50 shadow-2xl backdrop-blur-lg">
       <div className="absolute inset-0 z-0">
         <div className="bubble absolute"></div>
         <div className="bubble absolute"></div>
@@ -42,6 +40,10 @@ const Navbar = () => {
         />
         <Link to="/profile" className="tech-nav-link">Profile</Link>
       </div>
+      
+
+    
+
     </nav>
   );
 };
