@@ -1,0 +1,59 @@
+.video-editor-container {
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin-bottom: 20px;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .timeline {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    max-width: 3xl;
+    height: 24;
+    border: 1px solid #4b0082;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24;
+    height: 100%;
+    background-color: #333;
+    border: 1px solid #4b0082;
+    margin-right: 8px;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .controls button:hover {
+    opacity: 0.8;
+  }

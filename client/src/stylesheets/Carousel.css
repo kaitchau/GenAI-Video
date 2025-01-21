@@ -1,10 +1,10 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
-  }
+}
   
   .carousel-wrapper {
     display: flex;
@@ -41,3 +41,35 @@
   .carousel-button.next {
     right: 10px;
   }
+
+
+  /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 200%;
+  }
+
+  .carousel-item {
+    height: 200px;
+    font-size: 1.5rem;
+  }
+
+  .carousel-button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    max-width: 100%;
+  }
+
+  .carousel-item {
+    height: 150px;
+    font-size: 1rem;
+  }
+
+  .carousel-button {
+    padding: 6px;
+  }
+}
